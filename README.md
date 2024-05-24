@@ -1,6 +1,6 @@
 # Voici demo
 
-[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://voila-dashboards.github.io/voici-demo)
+[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://fomightez.github.io/voici-demotestMay24)
 
 [Voici](https://github.com/voila-dashboards/voici) deployed as a static site to GitHub Pages, for demo purposes.
 
@@ -8,7 +8,7 @@ It uses [jupyterlite-xeus](https://github.com/jupyterlite/xeus) to build the Ems
 
 ## ✨ Try it in your browser ✨
 
-https://voila-dashboards.github.io/voici-demo
+https://fomightez.github.io/voici-demotestMay24
 
 ## 💡 How to make your own deployment
 
