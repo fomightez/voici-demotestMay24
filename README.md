@@ -1,3 +1,5 @@
+Presently, the folium example `folium_jupyterlite.ipynb`, isn't working in Voici. (Oddly it was working over on [my older demotest](https://github.com/fomightez/voici-demotestBASEDonOLDrepo) before I changed the name and triggered a rebuild, and so I don't know what changed.) I see it tries to use requests to get the map and that usually won't work in Pyodide. I need to try the notebook again over in normal JupyterLite and/or look in the Voici issue page toe see if anything noted.
+
 # Voici demo
 
 [![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://fomightez.github.io/voici-demotestMay24)
