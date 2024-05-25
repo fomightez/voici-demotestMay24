@@ -6,4 +6,3 @@ dependencies:
   - xeus-python
   - pandas <2
   - bqplot
-  - folium
