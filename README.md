@@ -1,4 +1,10 @@
-Presently, the folium example `folium_jupyterlite.ipynb`, isn't working in Voici. (Oddly it was working over on [my older demotest](https://github.com/fomightez/voici-demotestBASEDonOLDrepo) before I changed the name and triggered a rebuild, and so I don't know what changed.) I'm getting the error `TypeError: Can't create an SSLContext object without an ssl module`. I think I need to add SSL into things, according to [here](https://github.com/pyodide/pyodide/issues/529#issuecomment-1542971001) and [here](https://pyodide.org/en/stable/usage/wasm-constraints.html#optional-modules) but not quite sure where/how.  Putting `await pyodide.loadPackage("ssl")` at the top of the folium notebook may work? 
+Presently, the folium example `folium_jupyterlite.ipynb`, isn't working in Voici. (Oddly it was working over on [my older demotest](https://github.com/fomightez/voici-demotestBASEDonOLDrepo) before I changed the name and triggered a rebuild, and so I don't know what changed.) I'm getting the error `TypeError: Can't create an SSLContext object without an ssl module`. I think I need to add SSL into things, according to [here](https://github.com/pyodide/pyodide/issues/529#issuecomment-1542971001) and [here](https://pyodide.org/en/stable/usage/wasm-constraints.html#optional-modules) but not quite sure where/how.  Putting `await pyodide.loadPackage("ssl")` at the top of the folium notebook may work? Not quite, I think but close. I at least worked it out in JupyterLite so far but cannot test folium there because folium works there already:  
+I worked it out. According to stuff I worked out above and [here](https://pyodide.org/en/stable/usage/loading-packages.html#how-to-chose-between-micropip-install-and-pyodide-loadpackage), I can load SSL with:
+
+```python 
+import pyodide_js
+await pyodide_js.loadPackage("ssl")
+``` 
 
 # Voici demo
 
