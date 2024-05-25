@@ -8,7 +8,7 @@ await pyodide_js.loadPackage("ssl")
 
 UGHH. I added that to the notbeook before the import of folium and still doesn't work, and is still saying `TypeError: Can't create an SSLContext object without an ssl module`?!?!?
 Next I tried adding openssl from [here](https://beta.mamba.pm/channels/emscripten-forge?tab=packages&size=25&index=0&query=openssl), the packages which are referenced in the documentation at the botom [here](https://github.com/voila-dashboards/voici-demo?tab=readme-ov-file). But had to then remove the openssl line in `environment.yml` because otherwise Voici hangs infinitely on 'Startign up kernel...'  
-Next I though maybe code [here](https://stackoverflow.com/questions/78495010/finding-similar-dna-sequence-in-a-specific-organism-with-biopythons-blast-modul/78497470#comment138398090_78497470) will help or allow me to troubleshoot more. It seemed to troubleshoot more because adding the `import ssl` fails out with `ModuleNotFoundError: No module named '_ssl'. But I had run `await pyodide.loadPackage("ssl")`???
+Next I though maybe code [here](https://stackoverflow.com/questions/78495010/finding-similar-dna-sequence-in-a-specific-organism-with-biopythons-blast-modul/78497470#comment138398090_78497470) will help or allow me to troubleshoot more. It seemed to troubleshoot more because adding the `import ssl` fails out with `ModuleNotFoundError: No module named '_ssl'`. But I had run `await pyodide.loadPackage("ssl")`???
 
 # Voici demo
 
