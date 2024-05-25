@@ -4,7 +4,9 @@ I worked it out. According to stuff I worked out above and [here](https://pyodid
 ```python 
 import pyodide_js
 await pyodide_js.loadPackage("ssl")
-``` 
+```
+
+UGHH. I added that to the notbeook before the import of folium and still doesn't work, and is still saying `TypeError: Can't create an SSLContext object without an ssl module`?!?!?
 
 # Voici demo
 
