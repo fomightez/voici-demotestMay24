@@ -7,3 +7,4 @@ dependencies:
   - pandas <2
   - bqplot
   - folium
+  - openssl
