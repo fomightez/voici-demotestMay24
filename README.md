@@ -10,6 +10,12 @@ UGHH. I added that to the notbeook before the import of folium and still doesn't
 Next I tried adding openssl from [here](https://beta.mamba.pm/channels/emscripten-forge?tab=packages&size=25&index=0&query=openssl), the packages which are referenced in the documentation at the botom [here](https://github.com/voila-dashboards/voici-demo?tab=readme-ov-file). But had to then remove the openssl line in `environment.yml` because otherwise Voici hangs infinitely on 'Startign up kernel...'  
 Next I though maybe code [here](https://stackoverflow.com/questions/78495010/finding-similar-dna-sequence-in-a-specific-organism-with-biopythons-blast-modul/78497470#comment138398090_78497470) will help or allow me to troubleshoot more. It seemed to troubleshoot more because adding the `import ssl` fails out with `ModuleNotFoundError: No module named '_ssl'`. But I had run `await pyodide.loadPackage("ssl")`???
 
+------
+
+Despite trying several things that work fine in JupyterLite, I was not able to get fetch or open_url to work in Voici to bring the csv into pandas or fetch the content and save it in the session and then read it. So at this time `test_fetch_data_at_URL.ipynb` doesn't work. However, it is no possible to read CSV files that are part of the repo into pandas and so `test_file_read_in_repo.ipynb` works and this is signficant improvement over putting the CSV data into the file like was necessary before.
+
+-------
+
 # Voici demo
 
 [![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://fomightez.github.io/voici-demotestMay24)
