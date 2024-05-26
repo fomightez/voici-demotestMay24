@@ -22,6 +22,11 @@ It uses [jupyterlite-xeus](https://github.com/jupyterlite/xeus) to build the Ems
 
 https://fomightez.github.io/voici-demotestMay24
 
+## An example page in dark theme
+
+[dark theme example](https://fomightez.github.io/voici-demotestMay24/voici/render/test_providing_inside_nb.html?theme=dark)   
+(Can do for any Voici page: add `?theme=dark` after the `.html`  
+
 ## 💡 How to make your own deployment
 
 https://user-images.githubusercontent.com/21197331/223079815-0ea78df4-5173-4adc-a2e4-e10b9593a9f4.webm
