@@ -4,6 +4,7 @@ channels:
   - conda-forge
 dependencies:
   - xeus-python
+  - numpy
   - pandas <2
   - bqplot
   - pyodide-py
